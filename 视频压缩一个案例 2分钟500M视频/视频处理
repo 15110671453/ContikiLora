@@ -1,0 +1,28 @@
+视频处理
+
+500M 视频 
+ffmpeg -i /Users/admindyn/Desktop/\[SC\]\ HPI_3DP_iOrthotics_701_RH_CHP.mov -s 512x288 -vcodec mpeg4 movie22.mp4
+
+ffmpeg -i /Users/admindyn/Desktop/\[SC\]\ HPI_3DP_iOrthotics_701_RH_CHP.mov -s 320x180 -vcodec mpeg4 movie.mp4
+
+以上两个 都是 变为6M
+
+那么 提高采样率 增加一点清晰度
+设置码率 音视频的码率
+
+ffmpeg -i /Users/admindyn/Desktop/\[SC\]\ HPI_3DP_iOrthotics_701_RH_CHP.mov -s 320x180 -b 1.5M -vcodec mpeg4 movie55.mp4
+
+-b 参数解析
+音频：-b:a     视频： - b:v　　设置视频码率为1500kbps
+
+
+输出17M
+
+其实可以根据
+计算输出文件大小　　(视频码率+音频码率) * 时长 /8 = 文件大小K
+
+
+
+保证清晰度 不改变画幅
+
+ffmpeg -i /Users/admindyn/Desktop/\[SC\]\ HPI_3DP_iOrthotics_701_RH_CHP.mov  -b 0.8M -vcodec mpeg4 movie77.mp4

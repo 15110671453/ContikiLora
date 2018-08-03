@@ -1,0 +1,26 @@
+ubuntu安装VMware Player for Contiki系统
+
+需要ubuntu 安装 gcc7.2版本
+
+sudo apt-get install gcc
+
+需要ubuntu 安装gtk+图形界面开发包 
+
+sudo apt-get install pkg-config
+
+sudo apt-get install glade libglade2-dev
+
+sudo apt-get install libgtk2.0-dev
+
+#需要Gnome sudo apt-get install gnome 图形界面
+
+需要sudo apt-get install gtk2-engines
+需要sudo apt-get install murrine-themes
+需要sudo apt-get install gtk2-engines-*
+
+
+之前安装的VMware 有问题  先使用命令卸载sudo vmware-installer -u vmware-player
+
+
+
+在虚拟中安装虚拟机 不可以
